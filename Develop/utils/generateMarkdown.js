@@ -33,6 +33,7 @@ function generateMarkdown(data) {
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Deployed Site](#deplyed site)
   - [Contributing](#contributing)
   - [License](#license)
   - [Questions](#questions)
@@ -42,6 +43,8 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
+
+  ## Deployed Site
 
   ## Contribution
   ${data.contribute}

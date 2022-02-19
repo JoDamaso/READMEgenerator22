@@ -36,9 +36,6 @@ const questions = (data) => {
                 }
             }
         },
-        {
-            type: 
-        },
         { // github username
             type: 'input',
             name: 'github',
@@ -86,15 +83,12 @@ const questions = (data) => {
             name: 'contribute',
             message: 'Explain to user what they possibly can contribute to your appliction',
         },
-        {
-            type: ''
-        }
     ])
 };
 
 // TODO: Create a function to write README file
 // Function call to initialize app
-init()
+questions()
 .then(writeToFile = data => {
     const readMe = generateReadMe(data)
 
