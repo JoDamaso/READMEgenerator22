@@ -8,6 +8,9 @@ You'll prompted in the termial for questions after you run the line 'node index.
 ## Installation 
  - Must have Node.js on your machine to run the generator
 
+## Usage 
+ - Link for walkthrough 
+
 ## User Story
 ```
 AS A developer
