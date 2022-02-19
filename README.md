@@ -8,6 +8,12 @@ You'll prompted in the termial for questions after you run the line 'node index.
 ## Installation 
  - Must have Node.js on your machine to run the generator
 
+## Usage 
+  - To use this you must type 'npm install inqurier' in your command terminal 
+  - Then run the command 'node index.js'
+  - You will then be prompted with question pertaining to your project
+  - After the questions have been fufilled, your README.md file will be generated from your inputs into the command terminal
+
 ## User Story
 ```
 AS A developer
