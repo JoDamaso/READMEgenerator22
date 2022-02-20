@@ -1,10 +1,14 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+const renderLicenseBadge = license => {
   if (!license) {
     return '';
   }
-}
+
+  return `
+  [![License: MIT](https://img.shields.io/badge/License-${data.license}-yellow.svg)](https://opensource.org/licenses/MIT)
+  `;
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -22,6 +26,9 @@ function renderLicenseSection(license) {
   }
 }
 
+// this goes under data.title, somehow
+// ${renderLicenseBadge(license)} ${data.license} 
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -33,10 +40,10 @@ function generateMarkdown(data) {
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Deployed Site](#deplyed site)
-  - [Contributing](#contributing)
+  - [Deployed Site](#deployed-site)
+  - [Contribution](#contribution)
   - [License](#license)
-  - [Questions](#questions)
+  - [Questions](#uestions)
   
   ## Installation
   ${data.install}
@@ -45,6 +52,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## Deployed Site
+  This is the link to the deployed site if you would like to view my application - https://${data.github}.github.io/${data.deployed}/
 
   ## Contribution
   ${data.contribute}

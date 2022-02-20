@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-
 // linking using require() which paths to the js that generates our README template
 const generateReadMe = require('./Develop/utils/generateMarkdown.js');
 
@@ -25,7 +24,7 @@ const questions = (data) => {
         { // description of application
             type: 'input',
             name: 'description',
-            message: 'Please write a short description of your project! (REQUIRED)',
+            message: 'Please write a description of your project. (REQUIRED)',
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -49,6 +48,11 @@ const questions = (data) => {
                     return false;
                 }
             }
+        },
+        { // user inputs email for contact purposes
+            type: 'input',
+            name: 'email',
+            message: 'Please type your email. So users may contact you, if there was any questions about your application.'
         },
         { // installing the application to user
             type: 'input',
@@ -78,11 +82,22 @@ const questions = (data) => {
                 }
             }
         },
+        { // user pastes link to their deployed site
+            type: 'input',
+            name: 'deployed',
+            message: 'Please type the exact name of your Repository!'
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'What license is this under?',
+            choices: ["MIT", "Apache", "ISC"]
+        },
         { // explain to user how someone may want to contribute 
             type: 'input',
             name: 'contribute',
             message: 'Explain to user what they possibly can contribute to your appliction',
-        },
+        }
     ])
 };
 
