@@ -1,18 +1,20 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenseBadge = license => {
+  // (https://img.shields.io/badge/License-${data.license}-yellow.svg)]
   if (!license) {
     return '';
   }
 
   return `
-  [![License: MIT](https://img.shields.io/badge/License-${data.license}-yellow.svg)](https://opensource.org/licenses/MIT)
+  
   `;
 };
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+const renderLicenseLink = license => {
+  // (https://opensource.org/licenses)
   if (!license) {
     return '';
   }
@@ -20,18 +22,25 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (!license) {
-    return '';
+const renderLicenseSection = license => {
+  // const { license } = data
+  // [![License: MIT]
+  switch(license) {
+    case 'MIT':
+      data.license = {
+        text: 'MIT',
+        url: 'mit url'
+      }
+      break;
   }
-}
-
-// this goes under data.title, somehow
-// ${renderLicenseBadge(license)} ${data.license} 
+  
+};
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+const generateMarkdown = data => {
+
   return `# ${data.title}
+  [![](https://img.shields.io/badge/license-${data.license.replaceAll(' ', '_')}-brightgreen)](https://opensource.org/licenses/${data.license === 'Apache 2.0' ? 'Apache-2.0' : data.license})\n
 
 
   ## Description

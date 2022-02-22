@@ -52,7 +52,7 @@ const questions = (data) => {
         { // user inputs email for contact purposes
             type: 'input',
             name: 'email',
-            message: 'Please type your email. So users may contact you, if there was any questions about your application.'
+            message: 'Please type your email. So users may contact you, if there was any questions about your application. (REQUIRED)'
         },
         { // installing the application to user
             type: 'input',
@@ -87,16 +87,16 @@ const questions = (data) => {
             name: 'deployed',
             message: 'Please type the exact name of your Repository!'
         },
-        {
+        { // list of license their project is under 
             type: 'list',
             name: 'license',
             message: 'What license is this under?',
-            choices: ["MIT", "Apache", "ISC"]
+            choices: ["MIT", "Apache 2.0", "ISC"]
         },
         { // explain to user how someone may want to contribute 
             type: 'input',
             name: 'contribute',
-            message: 'Explain to user what they possibly can contribute to your appliction',
+            message: 'Explain to user what they possibly can contribute to your appliction.',
         }
     ])
 };
@@ -106,7 +106,7 @@ const questions = (data) => {
 questions()
 .then(writeToFile = data => {
     const readMe = generateReadMe(data)
-
+    // creates a README.md file, takes in the data argument and throws a new error if something went wrong
     fs.writeFile('./README.md', readMe, err => {
     if (err) throw new Error(err);
 
