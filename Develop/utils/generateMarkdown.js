@@ -1,44 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-const renderLicenseBadge = license => {
-  // (https://img.shields.io/badge/License-${data.license}-yellow.svg)]
-  if (!license) {
-    return '';
-  }
-
-  return `
-  
-  `;
-};
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-const renderLicenseLink = license => {
-  // (https://opensource.org/licenses)
-  if (!license) {
-    return '';
-  }
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-const renderLicenseSection = license => {
-  // const { license } = data
-  // [![License: MIT]
-  switch(license) {
-    case 'MIT':
-      data.license = {
-        text: 'MIT',
-        url: 'mit url'
-      }
-      break;
-  }
-  
-};
-
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = data => {
-
   return `# ${data.title}
   [![](https://img.shields.io/badge/license-${data.license.replaceAll(' ', '_')}-brightgreen)](https://opensource.org/licenses/${data.license === 'Apache 2.0' ? 'Apache-2.0' : data.license})\n
 
