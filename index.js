@@ -101,7 +101,6 @@ const questions = (data) => {
     ])
 };
 
-// TODO: Create a function to write README file
 // Function call to initialize app
 questions()
 .then(writeToFile = data => {
@@ -113,11 +112,3 @@ questions()
     console.log('README has been created! Check out README.md in this directory to see it!');
     });
 });
-
-// TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
-// init()
-
-
