@@ -106,9 +106,9 @@ questions()
 .then(writeToFile = data => {
     const readMe = generateReadMe(data)
     // creates a README.md file, takes in the data argument and throws a new error if something went wrong
-    fs.writeFile('./README.md', readMe, err => {
+    fs.writeFile('./ExampleReadMe.md', readMe, err => {
     if (err) throw new Error(err);
 
-    console.log('README has been created! Check out README.md in this directory to see it!');
+    console.log('README has been created! Check out ExampleReadMe.md in this directory to see it!');
     });
 });
