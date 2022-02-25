@@ -1,19 +1,42 @@
 # READMEgenerator22
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 ## Description
 My incentive to build this project was to further my knowledge of node.js. The generator helps with speeding along the process of your work when coding. 
 You'll prompted in the termial for questions after you run the line 'node index.js' in the terminal. That will help you start building your portfolio easily and quickly
 
-
+### Table of Contents 
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [Demonstration](#demonstration)
+ - [License](#license)
+ - [Contribution](#contribution)
+ - [Questions](#questions)
+ - [User Story](#user-story)
+    - [Acceptance Criteria](#acceptance-criteria)
+---
 ## Installation 
- - Must have Node.js on your machine to run the generator
+ 1. Must have **Node.js** on your machine to run the generator.
+ 2. To use this you must type **'npm i'** in your command terminal to run inquirer.
 
 ## Usage 
-  - To use this you must type 'npm install inqurier' in your command terminal 
-  - Then run the command 'node index.js'
-  - You will then be prompted with question pertaining to your project
-  - After the questions have been fufilled, your README.md file will be generated from your inputs into the command terminal
+  - Then run the command **'node index.js'**.
+  - You will then be prompted with question pertaining to your project.
+  - After the questions have been fufilled, your README.md file will be generated from your inputs that went into the command terminal.
 
+## Demonstration
+This is the link to the demo of this application.
+
+## License 
+This project is under the license of **ISC**.
+
+## Contribution 
+Please feel free to contribute in any form you see fit! I'm open to all suggestions.
+
+## Questions
+If you have questions about this project, please email me at darryldamaso@gmail.com. If you'd like to see more of my projects, you can see them here - https://github.com/jodamaso.
+
+---
 ## User Story
 ```
 AS A developer
@@ -21,7 +44,7 @@ I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ```
 
-## ACCEPTANCE CRITERIA
+## Acceptance Criteria 
 ```
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
