@@ -15,6 +15,7 @@ const generateMarkdown = data => {
   - [License](#license)
   - [Questions](#uestions)
   
+  ---
   ## Installation
   ${data.install}
 
