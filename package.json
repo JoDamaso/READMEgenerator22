@@ -1,14 +1,23 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "My incentive to build this project was to further my knowledge of node.js. The generator helps with speeding along the process of your work when coding. \r You'll prompted in the termial for questions after you run the line 'node index.js' in the terminal. That will help you start building your portfolio easily and quickly",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "John Damaso",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoDamaso/READMEgenerator22.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JoDamaso/READMEgenerator22/issues"
+  },
+  "homepage": "https://github.com/JoDamaso/READMEgenerator22#readme",
+  "keywords": []
 }
